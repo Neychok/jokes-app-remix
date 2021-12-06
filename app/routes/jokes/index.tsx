@@ -21,7 +21,7 @@ export default function JokesIndexRoute() {
   return (
     <div>
       <p>Here's a random joke:</p>
-      <p>{data.randomJoke.content}</p>
+      {data.randomJoke ? <p>{data.randomJoke.content}</p> : null}
     </div>
   );
 }
